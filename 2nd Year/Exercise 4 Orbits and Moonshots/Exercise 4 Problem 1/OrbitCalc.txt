@@ -1,0 +1,4 @@
+Initial tangential velocity: 10.000000 ms^-1 	 Radius of Orbit: 2000000.000000 (m) 
+
+
+	 Time (s) 	 x (m) 	 y (m) 	 vx (ms^-1) 	 vy (ms^-1) 	 Energy (J) 	 Potential Energy (J) 	 Kinetic Energy (J) 

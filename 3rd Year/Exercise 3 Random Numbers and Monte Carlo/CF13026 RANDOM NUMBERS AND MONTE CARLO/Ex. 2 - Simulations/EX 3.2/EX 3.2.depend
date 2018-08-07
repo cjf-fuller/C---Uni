@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1460933682 source:\\ads.bris.ac.uk\filestore\myfiles\studentug10\cf13026\documents\coding third year\exercise 3\ex 3.2\main.c
+	<stdio.h>
+	<gsl/gsl_rng.h>
+	<gsl/gsl_math.h>
+	<gsl/gsl_randist.h>
+

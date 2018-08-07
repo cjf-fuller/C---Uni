@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1460659939 source:\\ads.bris.ac.uk\filestore\myfiles\studentug10\cf13026\documents\coding third year\exercise 3\ex3.1\main.c
+	<stdio.h>
+	<gsl/gsl_rng.h>
+	<gsl/gsl_math.h>
+	<gsl/gsl_histogram.h>
+
+1460936000 source:\\ads.bris.ac.uk\filestore\myfiles\studentug10\cf13026\documents\cf13026 random numbers and monte carlo\ex. 1 - random numbers in a distribution\ex3.1\main.c
+	<stdio.h>
+	<gsl/gsl_rng.h>
+	<gsl/gsl_math.h>
+	<gsl/gsl_histogram.h>
+

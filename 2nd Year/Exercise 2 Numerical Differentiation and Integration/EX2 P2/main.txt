@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double FX (double p0, double t0);
+void simps ();
+
+int main()
+{
+    simps();
+    return 0;
+}
+
+double FX (double p0, double t0)
+{
+    double l, g, FX;
+    l=1;
+    g=9.81;
+    FX=4*(sqrt(l/g))*(1/(sqrt(1-(pow(sin(t0/2),2)))*(pow(sin(p0),2))));
+    return FX;
+
+}
+
+void simps()
+{
+    double h, ans, compans;
+    int j,N;
+    h=M_PI/2;
+    ans=0;
+    for (N=2; N<=20; N+=2)
+    {
+
+       printf("%d\n", N);
+
+        for (j=0; j<=N; j++)
+        {
+            printf("%d\n", j);
+            if (j=0)
+            {
+                ans+=FX(j,1.5);
+                printf("%lf \t %d\n", ans, j);
+            }
+            else if (j=N)
+            {
+                ans+=FX(j,1.5);
+                printf("%lf \t %d\n", ans, j);
+                break;
+            }
+            else
+            {
+                (j%2 != 0)? (ans += 4*FX(j,1.5)) : (ans += 2*FX(j,1.5));
+                printf("%lf \t %d", ans, j);
+            }
+            }
+        compans = ans + pow(h,5);
+        printf(" FOR N = %d ANSWER FOUND TO BE %lf", N, compans);
+    }
+}
